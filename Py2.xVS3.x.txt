@@ -8,7 +8,15 @@
 7)不等运算符:3.x取消了<>，只有!=
 8)3.x去掉了``这种写法，只允许使用repr函数
 9)多个模块改名
+  _winreg -> winreg
+  ConfigParser -> configparser
+  copy_reg -> copyreg
+  Queue -> queue
+  SocketServer -> socketserver
+  repr -> reprlib
+  StringIO模块现在被合并到新的io模组内。
 10)数据类型
+   如：
    3.X去除了long类型，现在只有一种整型:int
    新增了bytes类型，并可与string相互转换
    dict的.keys()、.items 和.values()方法返回迭代器，而之前的iterkeys()等函数都被废弃。同时去掉的还有 dict.has_key()，用 in替代。
